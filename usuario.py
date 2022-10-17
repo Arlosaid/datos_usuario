@@ -1,3 +1,4 @@
+from logger_base import log
 class Usuario:
     def __init__(self,id_usuario=None,username=None,password=None):
         self._id_usuario = id_usuario
@@ -17,7 +18,7 @@ class Usuario:
     
     @property
     def username(self):
-        return self.username
+        return self._username
     
     @username.setter
     def username(self, username):
@@ -25,9 +26,9 @@ class Usuario:
    
     @property
     def password(self):
-        return self.password
+        return self._password
     
     @password.setter
     def password(self, password):
         self.password = password
-    
+ 

@@ -46,9 +46,6 @@ class Conexion:
         cls.obtenerPool().closeall()    
     
     
-if __name__ == '__main__':
-    conexion1 = Conexion.obtenerConexion()
-    Conexion.liberarConexion(conexion1)
-    conexion2 = Conexion.obtenerConexion()
+
     
                    
